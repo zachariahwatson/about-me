@@ -5,30 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>about-me</title>
 </head>
 <body>
     <div id="wrapper">
-        <div id="nav">
-            <a href=index.html>Home</a>
-            <a href=contact.html>Contact</a>
-            <a href=tdeecalculator.html>TDEE Calculator</a>
-        </div>
+        <nav>
+            <div id="nav">
+                <a href=index.html>Home</a>
+                <a href=contact.html>Contact</a>
+                <a href=tdeecalculator.html>TDEE Calculator</a>
+            </div>
+        </nav>
         <div id="content">
-            <div id="article">
+            <article>
                 <br><h2>Zach Watson</h2><hr>
                 <h4>About Me</h4>
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li>I like to play the drums</li>
+                    <li>My major is Digital Media: Computer Science</li>
+                    <li>I'm a junior</li>
                 </ul><hr>
-            </div>
-            <div id="aside"></div>
+                <h4>HTML Practice</h4>
+                <ol>
+                    <li>Ordered</li>
+                    <li>List</li>
+                    <li>Practice</li>
+                </ol>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Tables</th>
+                        <th scope="col">Practice</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>1</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>2</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>3</td>
+                        <td>3</td>
+                      </tr>
+                    </tbody>
+                </table><hr>
+                <div id="pictures">
+                    <div id="dogswrapper">
+                        <img id="dogs" src="IMG_3292.jpg">
+                        <p>Image credit: Zach Watson</p>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wxQR5kokq68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <aside>
+                <div id="image">
+                    <img src="IMG_2500.jpg">
+                </div>
+                <div id="asidecontent">
+                    <a href="https://github.com/zachariahwatson" class="fa fa-github fa-2x" target="_blank"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013235436669" class="fa fa-facebook fa-2x" target="_blank"></a>
+                </div>
+            </aside>
         </div>
-        <div id="footer"></div>
+        <footer></footer>
     </div>
 </body>
 </html>

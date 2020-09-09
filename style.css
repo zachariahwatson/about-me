@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     min-height: 100%;
 }
-#nav {
+nav, #nav {
     height: 50px;
     box-shadow: 0px 5px 10px #ebebeb;
     z-index: 10;
@@ -28,18 +28,60 @@ body {
     background-color: #f8f8f8;
     flex: 1;
     display: flex;
+    padding-bottom: 25px;
 }
-#article {
+article {
     padding: 0 22px 0 22px;
     flex: 9;
 }
-#aside {
+article > p {
+    font-size: 1em;
+}
+#dogs {
+    max-width: 500px;
+}
+aside {
     flex: 3;
     background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
-#footer {
+#asidecontent {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+#asidecontent > a {
+    padding: 10px;
+    text-decoration: none;
+}
+#image {
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+#image img {
+    max-width: 50%;
+    border-radius: 50%;
+}
+#pictures {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+footer {
+    padding-top: 50px;
     height: 50px;
     box-shadow: 0px -5px 10px #ebebeb;
+}
+.fa-github {
+    color: black;
+}
+.fa-facebook {
+    color: black;
 }
 @media only screen and (max-width: 768px) {
     #content {
