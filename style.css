@@ -28,10 +28,9 @@ nav, #nav {
     background-color: #f8f8f8;
     flex: 1;
     display: flex;
-    padding-bottom: 25px;
 }
 article {
-    padding: 0 22px 0 22px;
+    padding: 25px 22px 25px 22px;
     flex: 9;
 }
 article > p {
