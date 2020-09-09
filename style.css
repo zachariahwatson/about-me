@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+#nav {
+    flex: 1;
+    box-shadow: 0px 0px 10px #ebebeb;
+    z-index: 10;
+    display: flex;
+}
+#nav > div {
+    margin: 0;
+    padding: 0;
+}
+#content {
+    background-color: #f8f8f8;
+    flex: 9;
+}
+#footer {
+    flex: 2;
+}
