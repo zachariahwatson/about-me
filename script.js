@@ -28,6 +28,14 @@ function calcTDEE() {
                 tdee = bmr * 1.9;
                 break;
         }
-        document.getElementById("result").innerHTML = "Your TDEE is: " + tdee.toFixed(0); 
+        document.getElementById("result").innerHTML = "Your TDEE is: " + tdee.toFixed(0) + " calories"; 
+        var count = localStorage.getItem("count");
+        if (count == null) {
+            count = 0;
+        } else {
+            count++;
+        }
+        localStorage.setItem("count", count);
+        document.getElementById("count").innerHTML = "Times you have calculated your TDEE: " + count; 
     }  
 }
