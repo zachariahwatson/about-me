@@ -9,7 +9,13 @@ function calcTDEE() {
         weight = weight / 2.2;
         height = height * 2.54;
 
-        var bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age)
+        var maleBmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+        var femaleBmr = 65 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+        if (document.getElementById("male").checked == true) {
+            bmr = maleBmr;
+        } else {
+            bmr = femaleBmr;
+        }
         var tdee;
         switch (exercise) {
             case 1:
@@ -37,5 +43,6 @@ function calcTDEE() {
         }
         localStorage.setItem("count", count);
         document.getElementById("count").innerHTML = "Times you have calculated your TDEE: " + count; 
-    }  
+    }
+    return false;  
 }
